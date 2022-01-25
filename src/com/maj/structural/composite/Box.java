@@ -1,12 +1,13 @@
 package com.maj.structural.composite;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Box implements Component {
     private final List<Component> components;
 
     public Box() {
-        components = List.of();
+        components = new ArrayList<>();
     }
 
     public Box(List<Component> components) {
