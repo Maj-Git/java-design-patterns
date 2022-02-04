@@ -1,5 +1,8 @@
 package com.maj.behavioral.mediator;
 
+/**
+ * Le médiateur qui permet la communication entre le bouton, le ventilateur et le fournisseur de courant
+ */
 public class CoolingSystemMediator {
     private Fan fan;
     private PowerSupply powerSupply;
@@ -7,6 +10,9 @@ public class CoolingSystemMediator {
     public CoolingSystemMediator() {
     }
 
+    /**
+     * Allume ou coupe le ventilateur selon son état actuel.
+     */
     public void pressButton() {
         if (fan == null)
             return;
@@ -19,6 +25,9 @@ public class CoolingSystemMediator {
         }
     }
 
+    /**
+     * Démarre le courant.
+     */
     public void start() {
         if (powerSupply == null)
             return;
@@ -26,6 +35,9 @@ public class CoolingSystemMediator {
         powerSupply.turnOn();
     }
 
+    /**
+     * Coupe le courant.
+     */
     public void stop() {
         if (powerSupply == null)
             return;

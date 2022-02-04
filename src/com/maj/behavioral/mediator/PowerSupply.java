@@ -1,5 +1,8 @@
 package com.maj.behavioral.mediator;
 
+/**
+ * Fournit ou coupe le courant.
+ */
 public class PowerSupply {
     private boolean isOn;
 

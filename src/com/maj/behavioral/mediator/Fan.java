@@ -1,5 +1,8 @@
 package com.maj.behavioral.mediator;
 
+/**
+ * Un ventilateur qu'on peut allumer ou éteindre.
+ */
 public class Fan {
     private final CoolingSystemMediator mediator;
     private boolean isOn;
@@ -8,6 +11,7 @@ public class Fan {
         this.mediator = mediator;
         this.mediator.setFan(this);
     }
+
 
     public void turnOn() {
         mediator.start();
