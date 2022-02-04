@@ -2,6 +2,9 @@ package com.maj.behavioral.chainofresponsibility;
 
 import java.util.Locale;
 
+/**
+ * Handler qui modifie quelques caractères d'une chaine pour la rendre leet 1337.
+ */
 public class LeetStringHandler extends AbstractHandler {
     @Override
     public void handle(String request) {
