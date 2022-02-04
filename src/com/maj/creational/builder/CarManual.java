@@ -1,5 +1,8 @@
 package com.maj.creational.builder;
 
+/**
+ * POJO d'un manuel de voiture
+ */
 public class CarManual {
     private int seats;
     private String engine;

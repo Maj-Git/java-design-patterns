@@ -4,6 +4,11 @@ import com.maj.creational.builder.builders.CarBuilder;
 import com.maj.creational.builder.builders.CarManualBuilder;
 
 public class Main {
+    /**
+     * Démonstration du pattern Builder.
+     *
+     * En implémentant une interface commune, des builders peuvent construire des objets différents.
+     */
     public static void main(String[] args) {
         CarBuilder carBuilder = new CarBuilder();
         CarManualBuilder carManualBuilder = new CarManualBuilder();

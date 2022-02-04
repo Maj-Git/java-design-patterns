@@ -2,6 +2,9 @@ package com.maj.creational.builder.builders;
 
 import com.maj.creational.builder.CarManual;
 
+/**
+ * Un builder qui construit des manuels de voiture.
+ */
 public class CarManualBuilder implements Builder<CarManual> {
     private CarManual carManual = new CarManual();
 
