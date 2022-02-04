@@ -1,5 +1,8 @@
 package com.maj.behavioral.visitor.shapes;
 
+/**
+ * Classe abstraite pour une forme avec des coordonnées de départ.
+ */
 public abstract class AbstractShape implements Shape {
     protected final int x;
     protected final int y;

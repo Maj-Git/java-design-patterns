@@ -2,6 +2,9 @@ package com.maj.behavioral.visitor.shapes;
 
 import com.maj.behavioral.visitor.visitors.ShapeVisitor;
 
+/**
+ * Classe décrivant un cercle avec des coordonnées de départ, une largeur et une hauteur.
+ */
 public class Rectangle extends AbstractShape {
     private final int width;
     private final int height;
@@ -12,6 +15,10 @@ public class Rectangle extends AbstractShape {
         this.height = height;
     }
 
+    /**
+     * La classe accepte un visiteur et appelle la méthode appropriée dessus.
+     * @param visitor Le visiteur
+     */
     @Override
     public void accept(ShapeVisitor visitor) {
         visitor.visitRectangle(this);
