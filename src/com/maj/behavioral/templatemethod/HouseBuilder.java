@@ -1,5 +1,12 @@
 package com.maj.behavioral.templatemethod;
 
+/**
+ * Classe qui construit des maisons.
+ *
+ * On pose toujours les mêmes fondations et les mêmes toits.
+ *
+ * Une sous-classe devra fournir une méthode de construction des murs.
+ */
 public abstract class HouseBuilder {
     protected House house;
 

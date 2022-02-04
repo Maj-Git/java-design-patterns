@@ -1,5 +1,8 @@
 package com.maj.behavioral.templatemethod;
 
+/**
+ * POJO pour une maison
+ */
 public class House {
     private String foundation;
     private String walls;
