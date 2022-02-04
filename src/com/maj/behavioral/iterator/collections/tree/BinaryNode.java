@@ -1,5 +1,10 @@
 package com.maj.behavioral.iterator.collections.tree;
 
+/**
+ * Un noeud binaire qui peut être une feuille (sans enfants, left et right sont null),
+ * ou un noeud avec au moins un descendant.
+ * @param <T>
+ */
 public class BinaryNode<T> extends Node<T> {
     private final BinaryNode<T> left;
     private final BinaryNode<T> right;

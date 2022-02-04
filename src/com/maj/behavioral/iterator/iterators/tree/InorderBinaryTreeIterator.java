@@ -1,9 +1,13 @@
-package com.maj.behavioral.iterator.iterators;
+package com.maj.behavioral.iterator.iterators.tree;
 
 import com.maj.behavioral.iterator.collections.tree.BinaryNode;
 import com.maj.behavioral.iterator.collections.tree.BinaryTree;
 import com.maj.behavioral.iterator.collections.tree.Node;
 
+/**
+ * Itérateur de parcours "Inorder", on parcourt d'abord le sous-arbre gauche, puis la racine, puis le sous-arbre droit
+ * @param <T> Type des données encapsulées dans les noeuds de l'arbre.
+ */
 public class InorderBinaryTreeIterator<T> extends DepthFirstBinaryTreeIterator<T> {
 
     public InorderBinaryTreeIterator(BinaryTree<T> tree) {
@@ -15,10 +19,10 @@ public class InorderBinaryTreeIterator<T> extends DepthFirstBinaryTreeIterator<T
     }
 
     /**
-     * 1
-     * 2   3
-     * 4  5
-     * -> 4 2 5 1 3
+     * -----1-----
+     * ---2   3----
+     * -4  5-6 7-
+     * -> 4 2 5 1 6 3 7
      */
     @Override
     public Node<T> getNext() {

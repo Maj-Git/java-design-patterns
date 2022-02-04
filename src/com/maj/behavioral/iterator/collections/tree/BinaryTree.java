@@ -1,10 +1,18 @@
 package com.maj.behavioral.iterator.collections.tree;
 
-import com.maj.behavioral.iterator.iterators.InorderBinaryTreeIterator;
-import com.maj.behavioral.iterator.iterators.PostorderBinaryTreeIterator;
-import com.maj.behavioral.iterator.iterators.PreorderBinaryTreeIterator;
+import com.maj.behavioral.iterator.iterators.tree.InorderBinaryTreeIterator;
+import com.maj.behavioral.iterator.iterators.tree.PostorderBinaryTreeIterator;
+import com.maj.behavioral.iterator.iterators.tree.PreorderBinaryTreeIterator;
 import com.maj.behavioral.iterator.iterators.Iterator;
 
+/**
+ * Un arbre binaire qui comporte un noeud binaire de départ (la racine) qui permet de décrire l'arborescence,
+ * et des méthodes qui permettent de créer différents types d'itérateurs selon la manière dont on veut parcourir l'arbre.
+ *
+ * Cela permet d'encapsuler les comportements d'itération dans des classes séparées dont l'unique fonction sera l'itération
+ * sur la collection.
+ * @param <T> Le type de données porté par les noeuds binaires.
+ */
 public class BinaryTree<T> {
     private final BinaryNode<T> root;
 

@@ -4,7 +4,6 @@ import com.maj.behavioral.iterator.collections.LinkedList;
 import com.maj.behavioral.iterator.collections.tree.BinaryNode;
 import com.maj.behavioral.iterator.collections.tree.BinaryTree;
 import com.maj.behavioral.iterator.collections.tree.Node;
-import com.maj.behavioral.iterator.iterators.CircularLinkedListIterator;
 import com.maj.behavioral.iterator.iterators.Iterator;
 import com.maj.behavioral.iterator.iterators.TwoWayIterator;
 
@@ -12,14 +11,39 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> numbers = List.of(0, 1, 2, 3, 4);
-        LinkedList<Integer> linkedNumbers = new LinkedList<>(numbers);
-        TwoWayIterator<Integer> circularIterator = new CircularLinkedListIterator<>(linkedNumbers);
-
-        System.out.println(circularIterator.getCurrent());
-        System.out.println(circularIterator.getPrevious());
+        circularLinkedListExample();
 
         System.out.println("-----------");
+
+        binaryTreeExample();
+    }
+
+    /**
+     * On crée une liste chainée et un itérateur circulaire pour cette liste,
+     * qu'on va alors utiliser pour parcourir la liste.
+     */
+    private static void circularLinkedListExample() {
+        List<Integer> numbers = List.of(0, 1, 2, 3, 4);
+        LinkedList<Integer> linkedNumbers = new LinkedList<>(numbers);
+        TwoWayIterator<Integer> circularIterator = linkedNumbers.createCircularIterator();
+
+        System.out.println(circularIterator.getCurrent());
+        System.out.println(circularIterator.getNext());
+        System.out.println(circularIterator.getNext());
+        System.out.println(circularIterator.getNext());
+        System.out.println(circularIterator.getNext());
+        System.out.println(circularIterator.getNext());
+        System.out.println(circularIterator.getNext());
+        System.out.println(circularIterator.getPrevious());
+        System.out.println(circularIterator.getPrevious());
+        System.out.println(circularIterator.getPrevious());
+        System.out.println(circularIterator.getPrevious());
+    }
+
+    /**
+     * On crée un arbre binaire, et différents itérateurs dont on se sert pour parcourir l'arbre.
+     */
+    private static void binaryTreeExample() {
         BinaryTree<Integer> tree = new BinaryTree<>(
                 new BinaryNode<>(1,
                         new BinaryNode<>(2,
@@ -52,4 +76,5 @@ public class Main {
             System.out.println(postorderIterator.getNext().getValue());
         }
     }
+
 }

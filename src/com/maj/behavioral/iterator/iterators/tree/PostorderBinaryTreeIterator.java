@@ -1,9 +1,13 @@
-package com.maj.behavioral.iterator.iterators;
+package com.maj.behavioral.iterator.iterators.tree;
 
 import com.maj.behavioral.iterator.collections.tree.BinaryNode;
 import com.maj.behavioral.iterator.collections.tree.BinaryTree;
 import com.maj.behavioral.iterator.collections.tree.Node;
 
+/**
+ * Itérateur de parcours "Postorder", on parcourt d'abord le sous-arbre gauche, puis le sous-arbre droit, puis la racine.
+ * @param <T> Type des données encapsulées dans les noeuds de l'arbre.
+ */
 public class PostorderBinaryTreeIterator<T> extends DepthFirstBinaryTreeIterator<T> {
     public PostorderBinaryTreeIterator(BinaryTree<T> tree) {
         super(tree);
