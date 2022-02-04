@@ -3,6 +3,10 @@ package com.maj.behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Le publisher (l'observé) notifie tous ses subscribers (les observeurs) lorsqu'une nouvelle valeur est disponible.
+ * @param <T>
+ */
 public class Publisher<T> {
     private final List<Subscriber<T>> subscribers = new ArrayList<>();
 
