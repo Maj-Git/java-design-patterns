@@ -12,6 +12,10 @@ public class DocumentModerationState extends DocumentState {
         System.out.println(this.comment);
     }
 
+    /**
+     * Si le document a encore des erreurs, il reste en modération (nouvel état avec le nombre d'erreurs à jour),
+     * sinon il est approuvé.
+     */
     @Override
     public void publish() {
         int numberOfErrors = document.getNumberOfErrors();

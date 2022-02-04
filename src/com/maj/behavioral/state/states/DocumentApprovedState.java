@@ -7,6 +7,9 @@ public class DocumentApprovedState extends DocumentState {
         System.out.printf("Document %s is approved.%n", document.getName());
     }
 
+    /**
+     * Le document est déjà approuvé, rien de plus à faire.
+     */
     @Override
     public void publish() {
     }

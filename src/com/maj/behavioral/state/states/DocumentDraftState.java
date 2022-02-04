@@ -1,5 +1,8 @@
 package com.maj.behavioral.state.states;
 
+/**
+ * Etat initial d'un document, le document doit être passé en revue.
+ */
 public class DocumentDraftState extends DocumentState {
 
     @Override
@@ -7,6 +10,9 @@ public class DocumentDraftState extends DocumentState {
         System.out.printf("Draft of document %s.%n", document.getName());
     }
 
+    /**
+     * Si le document a des erreurs, il passe à en état "modération", sinon il est approuvé.
+     */
     @Override
     public void publish() {
         int numberOfErrors = document.getNumberOfErrors();
