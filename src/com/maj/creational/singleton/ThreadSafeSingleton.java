@@ -1,7 +1,11 @@
 package com.maj.creational.singleton;
 
-import com.sun.jdi.VoidValue;
 
+/**
+ * Notre singleton (thread-safe).
+ *
+ * Le constructeur est privé et la méthode getInstance() permet de récupérer l'instance unique de la classe.
+ */
 public class ThreadSafeSingleton {
     private static volatile ThreadSafeSingleton instance;
 
