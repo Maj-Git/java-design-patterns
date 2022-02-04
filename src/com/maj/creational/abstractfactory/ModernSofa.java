@@ -1,7 +1,7 @@
 package com.maj.creational.abstractfactory;
 
 public class ModernSofa extends AbstractSofa {
-    protected ModernSofa() {
+    public ModernSofa() {
         super("Modern sofa");
     }
 }

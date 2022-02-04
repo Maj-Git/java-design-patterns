@@ -1,10 +1,17 @@
 package com.maj.creational.abstractfactory;
 
-public class Main {
-    private static FurnituresFactory furnituresFactory;
+import com.maj.creational.abstractfactory.factories.FurnituresFactory;
+import com.maj.creational.abstractfactory.factories.ModernFurnituresFactory;
 
+public class Main {
+    /**
+     * Démonstration du pattern Abstract factory.
+     *
+     * On instancie la fabrique de notre choix qui nous fournira les produits d'une famille de produits.
+     */
     public static void main(String[] args) {
-        furnituresFactory = new ModernFurnituresFactory();
+        FurnituresFactory furnituresFactory = new ModernFurnituresFactory();
+
         AbstractChair chair = furnituresFactory.createChair();
         AbstractSofa sofa = furnituresFactory.createSofa();
     }
