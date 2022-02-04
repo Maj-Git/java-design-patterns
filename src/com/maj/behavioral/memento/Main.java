@@ -1,6 +1,12 @@
 package com.maj.behavioral.memento;
 
 public class Main {
+    /**
+     * Démonstration du pattern Memento.
+     *
+     * L'originator produit des valeurs et le caretaker permet la sauvegarde et la restauration des valeurs
+     * empilées dans l'historique.
+     */
     public static void main(String[] args) {
         NumberOriginator originator = new NumberOriginator();
         NumbersCaretaker caretaker = new NumbersCaretaker(originator);
