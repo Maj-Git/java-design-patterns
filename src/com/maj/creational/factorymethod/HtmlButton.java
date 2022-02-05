@@ -1,5 +1,8 @@
 package com.maj.creational.factorymethod;
 
+/**
+ * Un bouton HTML
+ */
 public class HtmlButton implements Button {
     @Override
     public void render() {

@@ -1,5 +1,8 @@
 package com.maj.creational.factorymethod;
 
+/**
+ * Un bouton pour Windows.
+ */
 public class WindowsButton implements Button {
     @Override
     public void render() {
