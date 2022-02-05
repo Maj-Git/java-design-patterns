@@ -1,5 +1,8 @@
 package com.maj.structural.facade;
 
+/**
+ * La facade qui permet de dessiner toutes les formes souhaitées.
+ */
 public class ShapeDrawerFacade {
     private final Rectangle rectangle;
     private final Circle circle;
