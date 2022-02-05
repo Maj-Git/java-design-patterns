@@ -3,6 +3,9 @@ package com.maj.structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Implémentation d'une boite, qui peut contenir d'autres composants (produits ou boîtes dans cet exemple).
+ */
 public class Box implements Component {
     private final List<Component> components;
 
@@ -14,6 +17,10 @@ public class Box implements Component {
         this.components = components;
     }
 
+    /**
+     * Calcule la somme du prix des composants enfants.
+     * @return Le prix total de la boîte.
+     */
     @Override
     public double getPrice() {
         return components.stream()
