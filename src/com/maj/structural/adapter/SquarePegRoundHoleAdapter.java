@@ -1,5 +1,8 @@
 package com.maj.structural.adapter;
 
+/**
+ * Un adapteur qui doit permettre d'adapter une cheville carrée pour pouvoir la faire passer dans un trou rond.
+ */
 public class SquarePegRoundHoleAdapter extends RoundPeg {
     private final SquarePeg peg;
 
