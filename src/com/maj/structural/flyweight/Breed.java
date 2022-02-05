@@ -1,5 +1,8 @@
 package com.maj.structural.flyweight;
 
+/**
+ * Une classe qui décrit une race de chien
+ */
 public class Breed {
     private final String name;
     private final String description;

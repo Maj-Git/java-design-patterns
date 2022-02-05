@@ -3,6 +3,9 @@ package com.maj.structural.flyweight;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Encapsule les races de chien dans une HashMap.
+ */
 public class BreedFactory {
     private static final Map<String, Breed> breeds = new HashMap<>();
 

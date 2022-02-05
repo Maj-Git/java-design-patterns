@@ -4,7 +4,7 @@ public class Main {
     /**
      * Démonstration du pattern Facade.
      *
-     * ON instancie une facade et c'est elle qui fait office de controller,
+     * On instancie une facade et c'est elle qui fait office de controller,
      * dépend des formes et les dessine.
      */
     public static void main(String[] args) {
