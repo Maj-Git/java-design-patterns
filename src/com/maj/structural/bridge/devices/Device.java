@@ -1,5 +1,8 @@
 package com.maj.structural.bridge.devices;
 
+/**
+ * Interface pour un device.
+ */
 public interface Device {
     boolean isEnabled();
     int getVolume();

@@ -2,6 +2,9 @@ package com.maj.structural.bridge.remotes;
 
 import com.maj.structural.bridge.devices.Device;
 
+/**
+ * Implémentation d'une télécommande de base qui sert de pont vers un device wrappé.
+ */
 public class BasicRemote implements Remote {
     protected final Device device;
 

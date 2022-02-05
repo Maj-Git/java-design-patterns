@@ -7,6 +7,12 @@ import com.maj.structural.bridge.remotes.BasicRemote;
 import com.maj.structural.bridge.remotes.Remote;
 
 public class Main {
+    /**
+     * Démonstration du pattern Bridge.
+     *
+     * Pour ajouter la fonctionnalité "Mute", il a suffit d'hériter de notre
+     * télécommande de base, sans toucher à cette dernière, ni à la hiérarchie des devices que l'on souhaite manipuler.
+     */
     public static void main(String[] args) {
         Device device = new Tv();
         Remote remote = new BasicRemote(device);

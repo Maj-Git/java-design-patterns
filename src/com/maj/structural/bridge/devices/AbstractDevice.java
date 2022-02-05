@@ -1,5 +1,8 @@
 package com.maj.structural.bridge.devices;
 
+/**
+ * Implémentation abstraite d'un device.
+ */
 public abstract class AbstractDevice implements Device {
 
     private boolean on;
