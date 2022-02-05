@@ -1,5 +1,8 @@
 package com.maj.structural.decorator;
 
+/**
+ * Spécialisation abstraite pour un job.
+ */
 public class AbstractSpecialization implements Job {
     private final Job job;
 
