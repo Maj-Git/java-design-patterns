@@ -4,7 +4,15 @@ import com.maj.structural.proxy.Video;
 
 import java.util.List;
 
+/**
+ * Implémentation du service qui récupèrera des vidéos en ligne.
+ */
 public class HttpVideosService implements VideosService {
+
+    /**
+     * On simule la récupération de vidéos en ligne.
+     * @return La liste des vidéos.
+     */
     @Override
     public List<Video> getVideos() {
         try {

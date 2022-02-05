@@ -1,5 +1,8 @@
 package com.maj.structural.proxy;
 
+/**
+ * POJO d'une vidéo.
+ */
 public class Video {
     private final String name;
 
